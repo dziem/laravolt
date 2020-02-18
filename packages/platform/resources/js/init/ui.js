@@ -460,9 +460,13 @@ class Laravolt {
   }
 }
 
-$(function () {
+$(document).on('ready turbolinks:load', function() {
   Laravolt.init($('body'));
-  $('[data-page-loader]').removeClass('active');
+  console.log($);
+  console.log('Page loaded');
 });
 
-
+// $(document).on('turbolinks:render', function() {
+//   // Laravolt.init($('body'));
+//   console.log('Page changed');
+// });

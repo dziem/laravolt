@@ -7,13 +7,8 @@
         @include('laravolt::menu.sidebar')
 
         <div class="content">
-
-            <div class="ui active inverted dimmer" data-page-loader>
-                <div class="ui loader"></div>
-            </div>
-
             <div class="content__inner">
-                <div class="ui container-fluid content__body p-1">
+                <div class="ui container-fluid content__body p-1" id="content-body">
                     @include('laravolt::components.page-header', $__page ?? [])
 
                     @yield('content')

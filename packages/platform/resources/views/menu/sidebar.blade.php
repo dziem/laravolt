@@ -1,6 +1,6 @@
 @php($items = app('laravolt.menu.sidebar')->all())
 
-<nav class="sidebar">
+<nav class="sidebar" id="sidebar" data-turbolinks-permanent>
     <div class="sidebar__wrapper" data-role="sidebar">
 
         <div class="sidebar__menu">
