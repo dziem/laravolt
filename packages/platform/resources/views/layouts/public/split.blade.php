@@ -23,20 +23,18 @@
 
 @php(\Stolz\Assets\Laravel\Facade::group('laravolt')->add('vegas'))
 
-@push('script')
-    <script>
-        $("[bg-slideshow]").vegas({
-            delay: 10000,
-            firstTransitionDuration: 1000,
-            transitionDuration: 5000,
-            slides: [
-                { src: "{{ asset('laravolt/img/landscape/forest.jpg') }}" },
-                { src: "{{ asset('laravolt/img/landscape/borobudur.jpg') }}" },
-                { src: "{{ asset('laravolt/img/landscape/borobudur-evening.jpg') }}" },
-                { src: "{{ asset('laravolt/img/landscape/sky.jpg') }}" },
-                { src: "{{ asset('laravolt/img/landscape/sky-2.jpg') }}" },
-                { src: "{{ asset('laravolt/img/landscape/bromo-tengger.jpg') }}" }
-            ]
-        });
-    </script>
-@endpush
+<script>
+    $("[bg-slideshow]").vegas({
+        delay: 10000,
+        firstTransitionDuration: 1000,
+        transitionDuration: 5000,
+        slides: [
+            { src: "{{ asset('laravolt/img/landscape/forest.jpg') }}" },
+            { src: "{{ asset('laravolt/img/landscape/borobudur.jpg') }}" },
+            { src: "{{ asset('laravolt/img/landscape/borobudur-evening.jpg') }}" },
+            { src: "{{ asset('laravolt/img/landscape/sky.jpg') }}" },
+            { src: "{{ asset('laravolt/img/landscape/sky-2.jpg') }}" },
+            { src: "{{ asset('laravolt/img/landscape/bromo-tengger.jpg') }}" }
+        ]
+    });
+</script>

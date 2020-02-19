@@ -491,14 +491,7 @@ class Laravolt {
 
 $(document).on('ready turbolinks:load', function() {
   Laravolt.init($('body'));
-  console.log($);
-  console.log('Page loaded');
 });
-
-// $(document).on('turbolinks:render', function() {
-//   // Laravolt.init($('body'));
-//   console.log('Page changed');
-// });
 
 $(function () {
 

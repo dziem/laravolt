@@ -57,13 +57,11 @@
 
 @endsection
 
-@push('script')
-    <script>
-      $(function () {
-        $('[epilog-table]').on('click', 'tr', function (e) {
-          let id = $(e.currentTarget).data('id');
-          $('.ui.modal[data-id="' + id + '"]').modal('show');
-        });
-      });
-    </script>
-@endpush
+<script>
+  $(function () {
+    $('[epilog-table]').on('click', 'tr', function (e) {
+      let id = $(e.currentTarget).data('id');
+      $('.ui.modal[data-id="' + id + '"]').modal('show');
+    });
+  });
+</script>

@@ -8,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     @stack('meta')
 
-    <link rel="stylesheet" type="text/css" href="{{ mix('semantic/semantic.min.css', 'laravolt') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/all.css', 'laravolt') }}"/>
+    <link data-turbolinks-track="reload" rel="stylesheet" type="text/css" href="{{ mix('semantic/semantic.min.css', 'laravolt') }}"/>
+    <link data-turbolinks-track="reload" rel="stylesheet" type="text/css" href="{{ mix('css/all.css', 'laravolt') }}"/>
     @stack('style')
     @stack('head')
     {!! Assets::group('laravolt')->css() !!}
     {!! Assets::css() !!}
 
-    <script type="text/javascript" src="{{ mix('js/vendor.js', 'laravolt') }}"></script>
+    <script data-turbolinks-track="reload" type="text/javascript" src="{{ mix('js/vendor.js', 'laravolt') }}"></script>
 
     <script>
         $.fn.calendar.settings.text = @json(form_calendar_text());
     </script>
 
-    <script type="text/javascript" src="{{ mix('js/platform.js', 'laravolt') }}"></script>
+    <script data-turbolinks-track="reload" type="text/javascript" src="{{ mix('js/platform.js', 'laravolt') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"></script>
     {!! Assets::group('laravolt')->js() !!}
     {!! Assets::js() !!}

@@ -14,7 +14,6 @@ $url = route('workflow::process-definition.xml', $key)
 
 <div camunda-map-diagram-{{ $key }} style="cursor: move; height: 500px"></div>
 
-@push('script')
 <script src="https://unpkg.com/bpmn-js@6.2.1/dist/bpmn-navigated-viewer.development.js"></script>
 <style>
     .highlight:not(.djs-connection) .djs-visual > :nth-child(1) {
@@ -74,4 +73,3 @@ $url = route('workflow::process-definition.xml', $key)
         });
     }
 </script>
-@endpush
